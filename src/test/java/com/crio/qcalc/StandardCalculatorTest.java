@@ -35,7 +35,7 @@ public class StandardCalculatorTest {
 void testDivisionOperation(){
     standardCalculator.divide(1,1);
         int actualResult = standardCalculator.getResult();
-        Assertions.assertEquals(0, actualResult);  
+        Assertions.assertEquals(1, actualResult);  
 }
 @Test
 
