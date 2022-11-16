@@ -5,8 +5,6 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-import com.crio.qcalc.StandardCalculator;
-
 public class StandardCalculatorTest {
     private StandardCalculator standardCalculator;
 
@@ -14,10 +12,6 @@ public class StandardCalculatorTest {
     void setup(){
         standardCalculator = new StandardCalculator();
     }
-
-
-
-
     @Test
     @DisplayName("Test Addition of Two Integers")
     void testAdditionOperation(){
@@ -33,6 +27,23 @@ public class StandardCalculatorTest {
         int actualResult = standardCalculator.getResult();
         Assertions.assertEquals(0, actualResult);
     }
+    
+@Test
 
+@DisplayName("Test Division of Two Integers")
 
+void testDivisionOperation(){
+    standardCalculator.divide(1,1);
+        int actualResult = standardCalculator.getResult();
+        Assertions.assertEquals(0, actualResult);  
+}
+@Test
+
+@DisplayName("Test Multiplication of Two Integers")
+
+void testMultiplicationOperation(){
+    standardCalculator.multiply(6,-4);
+        int actualResult = standardCalculator.getResult();
+        Assertions.assertEquals(-24, actualResult);  
+    }
 }
