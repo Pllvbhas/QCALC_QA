@@ -17,6 +17,7 @@ public class StandardCalculatorTest {
     void testAdditionOperation(){
         standardCalculator.add(1,1);
         int actualResult = standardCalculator.getResult();
+        
         Assertions.assertEquals(2, actualResult);
     }
 
