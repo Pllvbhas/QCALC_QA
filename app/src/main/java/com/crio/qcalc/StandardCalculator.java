@@ -47,4 +47,8 @@ public void divide(int num1, int num2){
         System.out.println("Standard Calculator Result:"+ result);
 
     }
+
+    public void subtract(double d, double e) {}
+
+    public void add(double d, double e) {}
 }
