@@ -11,7 +11,21 @@ public class StandardCalculatorTest {
 
     @BeforeEach
     void setup(){
-        standardCalculator = new StandardCalculator();
+        
+// StandardCalculator calc = new StandardCalculator();
+
+// calc.add(Double.MAX_VALUE, Double.MAX_VALUE);
+
+// calc.printResult();
+
+standardCalculator = new StandardCalculator();
+        
+// StandardCalculator calc = new StandardCalculator();
+
+// calc.add(Double.MAX_VALUE, 68.0);
+
+// calc.printResult();
+
     }
 
 

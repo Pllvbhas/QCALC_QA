@@ -10,5 +10,20 @@ public class App {
 
     public static void main(String[] args) {
         System.out.println(new App().getGreeting());
+        
+// StandardCalculator calc = new StandardCalculator();
+
+// calc.add(Double.MAX_VALUE, 1.0);
+
+// calc.printResult();
+
+
+StandardCalculator calc = new StandardCalculator();
+
+calc.add(Double.MAX_VALUE, Double.MAX_VALUE);
+
+calc.printResult();
+
+
     }
 }
