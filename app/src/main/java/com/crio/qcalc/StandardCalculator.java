@@ -1,20 +1,22 @@
 
 package com.crio.qcalc;
 public class StandardCalculator {
-    int num1;
-    int num2;
-    int result;
-public void add(int num1, int num2){
-    result = num1 + num2;
-   
+    double num1;
+    double num2;
+    double result;
+    
+
+    public void add(int num1, int num2){
+
+        add((double)num1, (double)num2);
+    
+    }
+public void add(double num1, double num2){
+
+  result = num1 + num2;
 
 }
 
-public int getResult() {
-
-    return result;
-
-}
 public void clearResult() {
 
     result = 0;
@@ -22,18 +24,26 @@ public void clearResult() {
 }
 
 public void subtract(int num1, int num2){
+    subtract((double)num1, (double)num2);
+}
+
+public void subtract(double num1, double num2){
     result = num1 - num2;
 
 }
-
-
 public void multiply(int num1, int num2){
+    multiply((double)num1, (double)num2);  
+}
+
+public void multiply(double num1, double num2){
     result = num1*num2;
 
 }
-
-
 public void divide(int num1, int num2){
+    divide((double)num1, (double)num2);
+}
+
+public void divide(double num1, double num2){
     result = num1 / num2;
 
 }
@@ -50,5 +60,5 @@ public void divide(int num1, int num2){
 
     public void subtract(double d, double e) {}
 
-    public void add(double d, double e) {}
+   
 }
