@@ -50,7 +50,6 @@ application {
     mainClass = 'com.crio.qcalc.App'
 }
 }
-
 tasks.named('test') {
     // Use JUnit Platform for unit tests.
 	reports {
