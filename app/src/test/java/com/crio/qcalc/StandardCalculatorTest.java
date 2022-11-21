@@ -31,32 +31,62 @@ public class StandardCalculatorTest {
         Assertions.assertEquals(-10.5, actualResult);
     }
 
-
     @Test
-    @DisplayName("Test Addition of Two Integers")
-    void testAdditionOperation(){
-        standardCalculator.add(1,1);
-        int actualResult = standardCalculator.getResult();
-        
-       // double actualResult = standardCalculator.getResult();
-        Assertions.assertEquals(2, actualResult);
-    }
 
-    @Test
-    @DisplayName("Test Substraction of Two Integers")
-    void testSubtractionOperation(){
-        standardCalculator.subtract(1,1);
-        int actualResult = standardCalculator.getResult();
-        Assertions.assertEquals(0, actualResult);
+    @DisplayName("Test Multiplication of Two Doubles")
+    
+    void testMultiplicationOperationForDoubles(){
+        standardCalculator.multiply(12.0,4.5);
+        double actualResult = standardCalculator.getResult();
+        Assertions.assertEquals(54.0, actualResult);
     }
     
+    
+    @Test
+    
+    @DisplayName("Test Division of Two Doubles")
+    
+    void testDivisionOperationForDoubles(){
+        standardCalculator.divide(12.0,3.0);
+        double actualResult = standardCalculator.getResult();
+        Assertions.assertEquals(4.0, actualResult);
+    }
+    
+@Test
+
+@DisplayName("Test Addition of Two Integers")
+
+void testAdditionOperation(){
+
+        standardCalculator.add(1,1);
+
+        double actualResult = standardCalculator.getResult();
+
+        Assertions.assertEquals(2, actualResult);
+
+}
+
+@Test
+
+@DisplayName("Test Subtraction of Two Integers")
+
+void testSubtractionOperation(){
+
+        standardCalculator.subtract(1,1);
+
+        double actualResult = standardCalculator.getResult();
+
+        Assertions.assertEquals(0, actualResult);
+
+}
+
 @Test
 
 @DisplayName("Test Division of Two Integers")
 
 void testDivisionOperation(){
     standardCalculator.divide(1,1);
-        int actualResult = standardCalculator.getResult();
+        double actualResult = standardCalculator.getResult();
         Assertions.assertEquals(1, actualResult);  
 }
 @Test
@@ -65,7 +95,7 @@ void testDivisionOperation(){
 
 void testMultiplicationOperation(){
     standardCalculator.multiply(6,-4);
-        int actualResult = standardCalculator.getResult();
+        double actualResult = standardCalculator.getResult();
         Assertions.assertEquals(-24, actualResult);  
     }
 }

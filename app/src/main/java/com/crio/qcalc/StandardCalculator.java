@@ -1,5 +1,8 @@
 
 package com.crio.qcalc;
+
+import java.util.function.IntToDoubleFunction;
+
 public class StandardCalculator {
     double num1;
     double num2;
@@ -14,6 +17,13 @@ public class StandardCalculator {
 public void add(double num1, double num2){
 
   result = num1 + num2;
+
+}
+
+
+public double getResult() {
+
+    return result;
 
 }
 
@@ -58,7 +68,4 @@ public void divide(double num1, double num2){
 
     }
 
-    public void subtract(double d, double e) {}
-
-   
 }
