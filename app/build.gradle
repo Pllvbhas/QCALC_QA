@@ -49,6 +49,7 @@ application {
     // Define the main class for the application.
     mainClass = 'com.crio.qcalc.App'
 }
+}
 
 tasks.named('test') {
     // Use JUnit Platform for unit tests.
@@ -58,8 +59,7 @@ tasks.named('test') {
 		junitXml.destination = file(destinationDirectory)
 		html.enabled = true
 	}
-	useJUnitPlatform {
-	}
+    useJUnitPlatform()
 	testLogging.events ("STANDARD_ERROR")
 	testLogging.events ("STANDARD_OUT")
 	afterSuite { desc, result ->
@@ -71,5 +71,4 @@ tasks.named('test') {
 					"${result.skippedTestCount} SKIPPED"
 		}
 	}
-}
 }

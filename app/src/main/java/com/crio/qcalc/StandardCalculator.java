@@ -1,8 +1,6 @@
 
 package com.crio.qcalc;
 
-import java.util.function.IntToDoubleFunction;
-
 public class StandardCalculator {
     double num1;
     double num2;
