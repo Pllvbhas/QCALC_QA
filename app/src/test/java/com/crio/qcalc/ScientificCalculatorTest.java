@@ -78,7 +78,7 @@ public class ScientificCalculatorTest {
         //Arrange
         double expectedResult = 2;
         //Act
-        scientificCalculator.sqrt(8);
+        scientificCalculator.cbrt(8);
         double actualResult = scientificCalculator.getResult();
         //Assert
         Assertions.assertEquals(expectedResult, actualResult);
